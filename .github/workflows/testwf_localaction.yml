@@ -1,0 +1,10 @@
+on: [workflow_dispatch]
+
+name: AzureLogin_localaction
+
+jobs:
+
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: ./.github/actions/templates/login_actions
