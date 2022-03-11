@@ -1,7 +1,4 @@
 name: AzureLogin_local_action
-
-inputs:
-
 runs:
   using: 'composite'
   steps:
