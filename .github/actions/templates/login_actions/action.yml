@@ -1,0 +1,12 @@
+name: AzureLogin_local_action
+
+inputs:
+
+runs:
+  using: 'composite'
+  steps:
+    - uses: azure/login@v1
+      with:
+        creds: ${{ secrets.AZURE_CREDENTIALS }}
+        enable-AzPSSession: true
+  
